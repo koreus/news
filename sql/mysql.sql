@@ -38,7 +38,7 @@ CREATE TABLE news_stories (
   KEY created (created),
   FULLTEXT KEY search (title, hometext, bodytext)
 )
-  ENGINE = MyISAM;
+  ENGINE = InnoDB;
 
 #
 # Table structure for table `news_stories_files`
@@ -55,7 +55,7 @@ CREATE TABLE news_stories_files (
   PRIMARY KEY (fileid),
   KEY storyid (storyid)
 )
-  ENGINE = MyISAM;
+  ENGINE = InnoDB;
 
 #
 # Table structure for table `news_topics`
@@ -76,7 +76,7 @@ CREATE TABLE news_topics (
   KEY topic_title (topic_title(100)),
   KEY menu (menu)
 )
-  ENGINE = MyISAM;
+  ENGINE = InnoDB;
 
 #
 # Table structure for table `news_stories_votedata`
@@ -94,4 +94,4 @@ CREATE TABLE news_stories_votedata (
   KEY ratinghostname (ratinghostname),
   KEY storyid (storyid)
 )
-  ENGINE = MyISAM;
+  ENGINE = InnoDB;
