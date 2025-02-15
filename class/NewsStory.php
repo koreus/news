@@ -223,7 +223,7 @@ class NewsStory extends XoopsStory
         int    $limit = 0,
         int    $start = 0,
         int    $checkRight = 0,
-        int    $topic = 0,
+               $topic = 0,
         int    $ihome = 0,
         bool   $asobject = true,
         string $order = 'published',

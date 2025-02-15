@@ -63,7 +63,8 @@ class XoopsStory
     public $topic_id;
     public $topic_pid;
     public $topic_rssurl;
-
+    public int $post_id = 0;
+    public bool $surveillance = false;
 
     /**
      * @param array|int $storyid
